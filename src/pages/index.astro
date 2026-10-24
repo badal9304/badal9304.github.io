@@ -5,13 +5,25 @@ import { site } from '../data/site';
 ---
 
 <BaseLayout>
-  <section class="hero wrap">
-    <h1 class="hero-title">
+  <section class="hero wrap" aria-labelledby="hero-title">
+    <p class="eyebrow">{site.eyebrow}</p>
+    <h1 class="hero-title" id="hero-title">
       {site.headline.map((line) => <span class="line"><span>{line}</span></span>)}
     </h1>
     <div class="hero-meta">
-      <div class="intro">
-        {site.intro.map((p) => <p>{p}</p>)}
+      <div>
+        <div class="intro">
+          {site.intro.map((p) => <p>{p}</p>)}
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="#work">See selected work</a>
+          <a class="btn" href="/about">About me</a>
+          <a class="btn btn-quiet" href="#contact">Get in touch</a>
+        </div>
+        <ul class="hero-links" aria-label="Profiles">
+          {site.links.filter((l) => l.label === 'LinkedIn').map((l) => <li><a href={l.href} rel="noopener" target="_blank">{l.label}<span class="sr-only"> (opens in a new tab)</span></a></li>)}
+          {site.resume && <li><a href={site.resume} download>Résumé (PDF)</a></li>}
+        </ul>
       </div>
       <dl class="now">
         {site.timeline.map((t) => <div><dt>{t.label}</dt><dd>{t.text}</dd></div>)}
@@ -19,10 +31,27 @@ import { site } from '../data/site';
     </div>
   </section>
 
-  <section class="work wrap" id="work">
+  <section class="work wrap" id="work" aria-labelledby="work-title">
     <div class="section-head">
-      <h2>Selected work</h2>
+      <h2 id="work-title">Selected work</h2>
+      <p class="section-note">Enterprise, travel and fintech products. Toyota’s dealer platform first, then supporting projects.</p>
     </div>
     <WorkGrid />
+  </section>
+
+  <section class="principles wrap" aria-labelledby="principles-title">
+    <div class="section-head">
+      <h2 id="principles-title">How I work</h2>
+    </div>
+    <ol class="principle-list">
+      {
+        site.principles.map((p) => (
+          <li>
+            <h3>{p.title}</h3>
+            <p>{p.text}</p>
+          </li>
+        ))
+      }
+    </ol>
   </section>
 </BaseLayout>

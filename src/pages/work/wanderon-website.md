@@ -1,30 +1,37 @@
 ---
 layout: ../../layouts/CaseStudy.astro
-order: 3
+order: 2
+group: selected
+category: Travel technology
 title: WanderOn website redesign
-summary: A user-centred redesign of a backpacking travel company’s website. Site traffic grew 112%.
+shortTitle: WanderOn website
+headline: A travel website redesign grounded in user research.
+summary: A research-led redesign of a backpacking travel company’s website. Site traffic grew 112%.
 company: WanderOn
 period: 2022 to 2025
-role: Lead designer
+role: Senior UI/UX designer
 tools: Figma, Hotjar, Google Analytics 4
 # cover: /images/wanderon-website.jpg
 # coverAlt: Describe the image for screen readers
 ---
 
+<!--
+  EDITING NOTE: Add specifics where you have them: what the old site got wrong, the main changes
+  to navigation and trip pages, and screenshots (put images in public/images/wanderon/).
+-->
+
 ## Overview
 
-Replace this with two or three sentences: what WanderOn is, what the website had to do, and what you were asked to change.
+WanderOn is a backpacking travel company. As its Senior UI/UX Designer, I redesigned the company’s website, basing the changes on user research rather than opinion.
 
-## The problem
+## How I approached it
 
-What was not working before? Add the evidence you had, such as bounce rate, heatmaps or drop-off points.
+- **Research first.** Hotjar heatmaps and Google Analytics 4 showed how people actually used the site.
+- **Check changes.** A/B tests checked whether design changes actually worked.
+- **Stay consistent.** I kept a design system consistent across WanderOn’s platforms, so the website matched the rest of the product.
 
-## What I did
-
-Walk through your process in plain steps: research, key decisions, what you tested, what you dropped. Add screenshots with this line, putting the image file in the `public/images` folder:
-
-![Describe the image](/images/your-image.jpg)
+Alongside the website, I designed WanderOn’s ad landing pages, internal dashboards and email journeys.
 
 ## Result
 
-Site traffic grew 112% after the redesign. Add what else changed, and how long it took to see it.
+Site traffic grew 112% after the redesign.

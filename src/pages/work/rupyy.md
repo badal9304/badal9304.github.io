@@ -1,14 +1,17 @@
 ---
 layout: ../../layouts/CaseStudy.astro
-order: 2
+order: 3
 title: Rupyy homepage and loan journey
-summary: A homepage redesign and a two-wheeler loan journey for CarDekho’s vehicle finance platform, built around an early eligibility check.
+summary: A homepage redesign and two loan application journeys, for dealers and customers, built around when to show eligibility.
 company: Rupyy (CarDekho)
 period: 2025
 role: UI/UX designer
 tools: Figma
 cover: /images/rupyy/hero.png
 coverAlt: Three phone screens showing the redesigned Rupyy homepage
+group: selected
+category: Fintech
+headline: Making loan eligibility clear earlier in the journey.
 ---
 
 ## Context and scope

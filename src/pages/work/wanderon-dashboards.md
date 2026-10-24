@@ -1,24 +1,29 @@
 ---
 layout: ../../layouts/CaseStudy.astro
-order: 5
-title: Internal dashboards for sales, ops and leads
-summary: Three internal tools redesigned around how the teams actually work. Process efficiency improved 50%.
+order: 4
+group: selected
+category: Enterprise UX · Data-heavy interfaces
+title: Internal dashboards for sales, operations and leads
+shortTitle: Internal dashboards
+headline: Internal tools redesigned around how each team actually works.
+summary: Dashboards for WanderOn’s Sales, Ops and Lead Management teams, designed around their daily work. Process efficiency improved 50%.
 company: WanderOn
 period: 2022 to 2025
-role: Lead designer
+role: Senior UI/UX designer
 tools: Figma, FigJam
 # cover: /images/dashboards.jpg
 # coverAlt: Describe the image for screen readers
 ---
 
+<!--
+  EDITING NOTE: Add specifics where you have them: the main tasks each team did, how you structured
+  tables, search and filters, how efficiency was measured, and anonymised screenshots.
+-->
+
 ## Overview
 
-Replace this with who used the dashboards, what they did all day, and what was slowing them down.
-
-## What I did
-
-Describe how you learned the teams’ workflows, what you changed first, and how you checked it worked.
+WanderOn’s Sales, Ops and Lead Management teams each relied on internal tools for their daily work. I designed dashboards for all three, redesigned around how each team actually works rather than around a generic dashboard layout.
 
 ## Result
 
-Process efficiency improved 50%. Add how this was measured.
+Process efficiency improved 50%.

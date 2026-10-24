@@ -1,0 +1,18 @@
+---
+// A project's cover image. Projects without an image get a typographic cover instead of a placeholder.
+const { project, eager = false, tone = 'var(--tone-1)' } = Astro.props;
+const p = project;
+---
+
+{
+  p.cover ? (
+    <div class="cover has-image">
+      <img src={p.cover} alt={p.coverAlt ?? ''} loading={eager ? 'eager' : 'lazy'} />
+    </div>
+  ) : (
+    <div class="cover type-cover" style={`--tone: ${tone}`} aria-hidden="true">
+      <span class="type-cover-cat">{p.category}</span>
+      <span class="type-cover-name">{p.shortTitle ?? p.title}</span>
+    </div>
+  )
+}

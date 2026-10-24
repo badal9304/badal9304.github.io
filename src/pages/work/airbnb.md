@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/CaseStudy.astro
-order: 1
+order: 6
 title: Airbnb app redesign
 summary: A redesign of the Airbnb mobile app, from login to payment, to cut information overload and make booking quicker.
 company: Airbnb (concept project)
@@ -9,6 +9,9 @@ role: UI/UX designer
 tools: Figma
 cover: /images/airbnb/hero.png
 coverAlt: Two phones showing the redesigned Airbnb home screen and booking screen in dark mode
+group: more
+category: Concept project · Mobile app
+headline: Reducing information overload from login to payment.
 ---
 
 ## Problem statement

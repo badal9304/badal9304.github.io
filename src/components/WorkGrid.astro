@@ -1,27 +1,64 @@
 ---
-// Reads every case study file in src/pages/work and lists it, in the order set by "order".
-const modules = import.meta.glob('../pages/work/*.md', { eager: true });
-const projects = Object.values(modules)
-  .map((m: any) => ({ ...m.frontmatter, url: m.url }))
-  .sort((a, b) => (a.order ?? 99) - (b.order ?? 99));
-const tones = ['var(--tone-1)', 'var(--tone-2)', 'var(--tone-3)', 'var(--tone-4)'];
+// The work section: one featured case study, supporting case studies, then a short list of other work.
+import Cover from './Cover.astro';
+import { projects, tones } from '../data/projects';
+
+const featured = projects.find((p: any) => p.group === 'featured');
+const selected = projects.filter((p: any) => p.group === 'selected');
+const more = projects.filter((p: any) => p.group === 'more');
 ---
+
+{
+  featured && (
+    <article class="featured">
+      <a href={featured.url} class="featured-link">
+        <Cover project={featured} eager tone="var(--tone-1)" />
+        <div class="featured-body">
+          <p class="eyebrow">Featured · {featured.category}</p>
+          <h3>{featured.title}</h3>
+          <p class="featured-headline">{featured.headline}</p>
+          {featured.contributions && (
+            <ul class="tags" aria-label="Areas of contribution">
+              {featured.contributions.map((c: string) => <li>{c}</li>)}
+            </ul>
+          )}
+          <span class="arrow-link">Read the case study</span>
+        </div>
+      </a>
+    </article>
+  )
+}
 
 <ul class="work-grid">
   {
-    projects.map((p, i) => (
+    selected.map((p: any, i: number) => (
       <li class="project">
         <a href={p.url}>
-          {p.cover ? (
-            <div class="cover has-image"><img src={p.cover} alt={p.coverAlt ?? p.title} loading="lazy" /></div>
-          ) : (
-            <div class="cover" style={`--tone: ${tones[i % tones.length]}`}>Cover image goes here</div>
-          )}
+          <Cover project={p} tone={tones[(i + 1) % tones.length]} />
+          <p class="eyebrow">{p.category}</p>
           <h3>{p.title}</h3>
           <p class="summary">{p.summary}</p>
-          <p class="meta muted">{p.company}, {p.period}</p>
+          <span class="arrow-link">View project</span>
         </a>
       </li>
     ))
   }
 </ul>
+
+{
+  more.length > 0 && (
+    <div class="more-work">
+      <h3 class="more-head">More work</h3>
+      <ul>
+        {more.map((p: any) => (
+          <li>
+            <a href={p.url}>
+              <span class="more-title">{p.title}</span>
+              <span class="more-cat">{p.category}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
+}

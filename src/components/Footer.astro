@@ -4,12 +4,13 @@ const year = new Date().getFullYear();
 ---
 
 <footer class="site-footer wrap" id="contact">
-  <p class="contact-lead">Working on something? Write to me.</p>
+  <h2 class="contact-head">{site.contact.headline}</h2>
+  <p class="contact-text">{site.contact.text}</p>
   <a class="contact-mail" href={`mailto:${site.email}`}>{site.email}</a>
   <div class="foot-row">
-    <ul>
-      {site.links.map((l) => <li><a href={l.href} rel="noopener">{l.label}</a></li>)}
-      {site.resume && <li><a href={site.resume}>CV (PDF)</a></li>}
+    <ul aria-label="Profiles">
+      {site.links.map((l) => <li><a href={l.href} rel="noopener" target="_blank">{l.label}<span class="sr-only"> (opens in a new tab)</span></a></li>)}
+      {site.resume && <li><a href={site.resume} download>Download résumé (PDF)</a></li>}
     </ul>
     <p>© {year} {site.name}</p>
   </div>
