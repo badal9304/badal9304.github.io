@@ -2,9 +2,26 @@
 import BaseLayout from './BaseLayout.astro';
 import Cover from '../components/Cover.astro';
 import { projects } from '../data/projects';
+import { site } from '../data/site';
 
-const { frontmatter, headings = [], url } = Astro.props;
+const { frontmatter, headings = [] } = Astro.props;
 const f = frontmatter;
+const url = Astro.props.url.endsWith('/') ? Astro.props.url : `${Astro.props.url}/`;
+
+// Search and social sharing for this case study.
+const ogImage = f.ogImage ?? site.ogImage;
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'CreativeWork',
+  name: f.title,
+  headline: f.headline ?? f.summary,
+  description: f.seoDescription ?? f.summary,
+  url: new URL(url, Astro.site).href,
+  image: new URL(ogImage, Astro.site).href,
+  genre: f.category,
+  author: { '@type': 'Person', name: site.name, url: site.url },
+  creator: { '@type': 'Person', name: site.name, url: site.url },
+};
 
 // Section links for long case studies (set "toc: true" in the case study).
 const sections = f.toc ? headings.filter((h: any) => h.depth === 2) : [];
@@ -14,7 +31,14 @@ const i = projects.findIndex((p: any) => p.url === url);
 const next = projects[(i + 1) % projects.length];
 ---
 
-<BaseLayout title={`${f.title}, Badal Ranjan`} description={f.summary}>
+<BaseLayout
+  title={f.seoTitle ?? `${f.title} | ${site.name}`}
+  description={f.seoDescription ?? f.summary}
+  image={ogImage}
+  imageAlt={f.ogImage ? f.coverAlt : site.ogImageAlt}
+  type="article"
+  schema={schema}
+>
   <article class="wrap">
     <header class="page-head">
       <p class="eyebrow">{f.category}</p>

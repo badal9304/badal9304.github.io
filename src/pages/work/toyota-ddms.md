@@ -21,23 +21,9 @@ contributions:
   - Design systems
   - Product and engineering collaboration
   - Developer handoff
+seoTitle: "Toyota Dealer Management System UX | Badal Ranjan"
+seoDescription: "How Badal Ranjan designs features, workflows and reusable components at Coforge for Toyota's Digital Dealer Management System, an enterprise dealer platform."
 ---
-
-<!--
-  EDITING NOTE: This case study describes the approach without naming confidential features.
-  Where you're allowed to, add a real example under "Information architecture and interaction decisions"
-  using the decision block below, and add anonymised or approved visuals in the image sections.
-
-  <div class="decision">
-    <h3>Decision title</h3>
-    <dl>
-      <div><dt>Problem</dt><dd>…</dd></div>
-      <div><dt>Reasoning</dt><dd>…</dd></div>
-      <div><dt>Trade-off</dt><dd>…</dd></div>
-      <div><dt>User benefit</dt><dd>…</dd></div>
-    </dl>
-  </div>
--->
 
 ## Project overview
 

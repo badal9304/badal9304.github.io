@@ -13,12 +13,9 @@ role: Senior UI/UX designer
 tools: Figma, FigJam
 # cover: /images/dashboards.jpg
 # coverAlt: Describe the image for screen readers
+seoTitle: "WanderOn Internal Dashboards UX | Badal Ranjan"
+seoDescription: "Internal dashboards for WanderOn's Sales, Ops and Lead Management teams, designed by Badal Ranjan around how each team works. Process efficiency rose 50%."
 ---
-
-<!--
-  EDITING NOTE: Add specifics where you have them: the main tasks each team did, how you structured
-  tables, search and filters, how efficiency was measured, and anonymised screenshots.
--->
 
 ## Overview
 

@@ -13,12 +13,9 @@ role: Senior UI/UX designer
 tools: Figma, Framer, Google Analytics 4
 # cover: /images/landing-pages.jpg
 # coverAlt: Describe the image for screen readers
+seoTitle: "WanderOn Ad Landing Pages | Badal Ranjan"
+seoDescription: "Ad landing pages Badal Ranjan designed for WanderOn's Google and Facebook travel campaigns, driving a 127% increase in leads and 2.3x revenue growth."
 ---
-
-<!--
-  EDITING NOTE: Add specifics where you have them: what you tested (headlines, forms, layout),
-  the time period for the results, and screenshots.
--->
 
 ## Overview
 

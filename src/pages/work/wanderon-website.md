@@ -13,12 +13,9 @@ role: Senior UI/UX designer
 tools: Figma, Hotjar, Google Analytics 4
 # cover: /images/wanderon-website.jpg
 # coverAlt: Describe the image for screen readers
+seoTitle: "WanderOn Website Redesign Case Study | Badal Ranjan"
+seoDescription: "A research-led redesign of WanderOn's travel website by Badal Ranjan, using heatmaps, analytics and A/B tests. Site traffic grew 112% after the redesign."
 ---
-
-<!--
-  EDITING NOTE: Add specifics where you have them: what the old site got wrong, the main changes
-  to navigation and trip pages, and screenshots (put images in public/images/wanderon/).
--->
 
 ## Overview
 

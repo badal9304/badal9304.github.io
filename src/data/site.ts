@@ -6,9 +6,14 @@
 export const site = {
   name: 'Badal Ranjan',
   role: 'UI/UX Designer',
-  title: 'Badal Ranjan, UI/UX Designer',
+  // Search and social sharing. Titles stay under 60 characters, descriptions 140 to 160.
+  title: 'Badal Ranjan – Senior UI/UX Designer | Portfolio',
   description:
-    'UI/UX designer making complex enterprise workflows clear and consistent. Currently designing Toyota’s Digital Dealer Management System at Coforge.',
+    'Portfolio of Badal Ranjan, a Senior UI/UX Designer with 4+ years designing enterprise workflows, dashboards and mobile apps. See case studies and get in touch.',
+  url: 'https://badal9304.github.io/',
+  jobTitle: 'Senior UI/UX Designer',
+  ogImage: '/og/default.jpg',
+  ogImageAlt: 'Badal Ranjan, Senior UI/UX Designer, in a lavender suit in a bright office',
   email: 'badalranjan9@gmail.com',
 
   // Small line above the headline on the home page.
@@ -43,7 +48,7 @@ export const site = {
   // Top navigation
   nav: [
     { label: 'Work', href: '/#work' },
-    { label: 'About', href: '/about' },
+    { label: 'About', href: '/about/' },
     { label: 'Contact', href: '#contact' },
   ],
 

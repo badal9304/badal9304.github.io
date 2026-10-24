@@ -7,7 +7,7 @@ company: Airbnb (concept project)
 period: Design sprint
 role: UI/UX designer
 tools: Figma
-cover: /images/airbnb/hero.png
+cover: /images/airbnb/hero.webp
 coverAlt: Two phones showing the redesigned Airbnb home screen and booking screen in dark mode
 group: featured
 contributions:
@@ -20,6 +20,9 @@ contributions:
   - Prototyping
 category: Concept project · Mobile app
 headline: Reducing information overload from login to payment.
+seoTitle: "Airbnb App Redesign Case Study | Badal Ranjan"
+seoDescription: "A UX case study redesigning the Airbnb mobile app from login to payment: user research, personas, a journey map and before-and-after screens by Badal Ranjan."
+ogImage: /og/airbnb.jpg
 ---
 
 ## Problem statement
@@ -56,7 +59,7 @@ Expedia and Booking.com both do two things well:
 
 <article class="persona">
   <header>
-    <img src="/images/airbnb/persona-shubham.jpg" alt="" loading="lazy" />
+    <img src="/images/airbnb/persona-shubham.webp" alt="Persona photo for Shubham" loading="lazy" decoding="async" width="240" height="302" />
     <div>
       <h3>Shubham</h3>
       <p class="muted">30 · Software engineer · Bengaluru</p>
@@ -72,7 +75,7 @@ Expedia and Booking.com both do two things well:
 
 <article class="persona">
   <header>
-    <img src="/images/airbnb/persona-neha.jpg" alt="" loading="lazy" />
+    <img src="/images/airbnb/persona-neha.webp" alt="Persona photo for Neha Verma" loading="lazy" decoding="async" width="240" height="360" />
     <div>
       <h3>Neha Verma</h3>
       <p class="muted">35 · Marketing manager · Delhi</p>
@@ -88,7 +91,7 @@ Expedia and Booking.com both do two things well:
 
 <article class="persona">
   <header>
-    <img src="/images/airbnb/persona-aarav.jpg" alt="" loading="lazy" />
+    <img src="/images/airbnb/persona-aarav.webp" alt="Persona photo for Aarav Mehta" loading="lazy" decoding="async" width="240" height="360" />
     <div>
       <h3>Aarav Mehta</h3>
       <p class="muted">28 · Travel blogger · Delhi</p>
@@ -108,7 +111,7 @@ Expedia and Booking.com both do two things well:
 
 The journey for booking a stay.
 
-![User journey map for booking a stay on Airbnb](/images/airbnb/journey-map.jpg)
+<img src="/images/airbnb/journey-map.webp" alt="User journey map for booking a stay on Airbnb" width="2000" height="695" loading="lazy" decoding="async" />
 
 ## High-fidelity mockups
 
@@ -120,7 +123,7 @@ The journey for booking a stay.
     <ul><li>The redesigned login and sign-up screen.</li></ul>
   </figcaption>
   <div class="fold-shots">
-    <div class="shot after"><img src="/images/airbnb/login-after.png" alt="Redesigned login and sign-up screen" loading="lazy" /><span>After</span></div>
+    <div class="shot after"><img src="/images/airbnb/login-after.webp" alt="Redesigned login and sign-up screen" loading="lazy" decoding="async" width="474" height="900" /><span>After</span></div>
   </div>
 </figure>
 
@@ -130,8 +133,8 @@ The journey for booking a stay.
     <ul><li>A search bar makes it easier to find a country code.</li></ul>
   </figcaption>
   <div class="fold-shots">
-    <div class="shot before"><img src="/images/airbnb/login-country-before.jpg" alt="Original country code list" loading="lazy" /><span>Before</span></div>
-    <div class="shot after"><img src="/images/airbnb/login-country-after.png" alt="Redesigned country code list with a search bar" loading="lazy" /><span>After</span></div>
+    <div class="shot before"><img src="/images/airbnb/login-country-before.webp" alt="Original country code list" loading="lazy" decoding="async" width="540" height="1200" /><span>Before</span></div>
+    <div class="shot after"><img src="/images/airbnb/login-country-after.webp" alt="Redesigned country code list with a search bar" loading="lazy" decoding="async" width="477" height="872" /><span>After</span></div>
   </div>
 </figure>
 
@@ -144,8 +147,8 @@ The journey for booking a stay.
     </ul>
   </figcaption>
   <div class="fold-shots">
-    <div class="shot before"><img src="/images/airbnb/listing-before.jpg" alt="Original property listing screen" loading="lazy" /><span>Before</span></div>
-    <div class="shot after"><img src="/images/airbnb/listing-after.png" alt="Redesigned property listing with filters and recommendations" loading="lazy" /><span>After</span></div>
+    <div class="shot before"><img src="/images/airbnb/listing-before.webp" alt="Original property listing screen" loading="lazy" decoding="async" width="540" height="1200" /><span>Before</span></div>
+    <div class="shot after"><img src="/images/airbnb/listing-after.webp" alt="Redesigned property listing with filters and recommendations" loading="lazy" decoding="async" width="454" height="865" /><span>After</span></div>
   </div>
 </figure>
 
@@ -155,8 +158,8 @@ The journey for booking a stay.
     <ul><li>Less scrolling, so information is easier to reach.</li></ul>
   </figcaption>
   <div class="fold-shots">
-    <div class="shot before"><img src="/images/airbnb/detail-before.jpg" alt="Original property detail screen" loading="lazy" /><span>Before</span></div>
-    <div class="shot after"><img src="/images/airbnb/detail-after.png" alt="Redesigned property detail screen" loading="lazy" /><span>After</span></div>
+    <div class="shot before"><img src="/images/airbnb/detail-before.webp" alt="Original property detail screen" loading="lazy" decoding="async" width="540" height="1200" /><span>Before</span></div>
+    <div class="shot after"><img src="/images/airbnb/detail-after.webp" alt="Redesigned property detail screen" loading="lazy" decoding="async" width="444" height="846" /><span>After</span></div>
   </div>
 </figure>
 
@@ -170,9 +173,9 @@ The journey for booking a stay.
     </ul>
   </figcaption>
   <div class="fold-shots">
-    <div class="shot before"><img src="/images/airbnb/pay-before-1.jpg" alt="Original confirm and pay screen" loading="lazy" /><span>Before</span></div>
-    <div class="shot before"><img src="/images/airbnb/pay-before-2.jpg" alt="Original payment options screen" loading="lazy" /><span>Before</span></div>
-    <div class="shot after"><img src="/images/airbnb/pay-after.png" alt="Redesigned request to book screen" loading="lazy" /><span>After</span></div>
+    <div class="shot before"><img src="/images/airbnb/pay-before-1.webp" alt="Original confirm and pay screen" loading="lazy" decoding="async" width="540" height="1200" /><span>Before</span></div>
+    <div class="shot before"><img src="/images/airbnb/pay-before-2.webp" alt="Original payment options screen" loading="lazy" decoding="async" width="540" height="1200" /><span>Before</span></div>
+    <div class="shot after"><img src="/images/airbnb/pay-after.webp" alt="Redesigned request to book screen" loading="lazy" decoding="async" width="441" height="841" /><span>After</span></div>
   </div>
 </figure>
 
@@ -182,7 +185,7 @@ The journey for booking a stay.
     <ul><li>The whole redesigned page, from trip details down to payment and the booking button.</li></ul>
   </figcaption>
   <div class="fold-shots">
-    <div class="shot after tall"><img src="/images/airbnb/pay-after-full.png" alt="Full redesigned confirm and pay page" loading="lazy" /><span>After</span></div>
+    <div class="shot after tall"><img src="/images/airbnb/pay-after-full.webp" alt="Full redesigned confirm and pay page" loading="lazy" decoding="async" width="900" height="3593" /><span>After</span></div>
   </div>
 </figure>
 
@@ -190,6 +193,6 @@ The journey for booking a stay.
 
 ## Prototype
 
-![Prototype screens for the Airbnb redesign](/images/airbnb/prototype.png)
+<img src="/images/airbnb/prototype.webp" alt="Prototype screens for the Airbnb redesign" width="1165" height="601" loading="lazy" decoding="async" />
 
 [Open the prototype in Figma](https://www.figma.com/proto/pVk7gDT6cICfQ3iceagmTQ/Airbnb?page-id=0%3A1&node-id=52-4695&node-type=frame&viewport=792%2C393%2C0.35&t=vc8idHZZd0IAmr8v-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=52%3A4695)

@@ -2,16 +2,23 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { site } from '../data/site';
 import { bio, skills, experience, recognition, tools, education } from '../data/experience';
+import { personSchema } from '../data/schema';
+
+const schema = { '@context': 'https://schema.org', '@type': 'ProfilePage', mainEntity: personSchema };
 ---
 
-<BaseLayout title={`About, ${site.name}`} description="Background, skills and experience of Badal Ranjan, UI/UX Designer.">
+<BaseLayout
+  title="About Badal Ranjan – Senior UI/UX Designer"
+  description="Background, skills and experience of Badal Ranjan, a Senior UI/UX Designer at Coforge working on Toyota’s dealer platform, plus awards and education."
+  schema={schema}
+>
   <div class="wrap">
     <header class="page-head about-head">
       <div>
         <p class="eyebrow">About me</p>
         <h1>Clear thinking, deliberate decisions.</h1>
       </div>
-      <img class="portrait" src="/images/badal-ranjan.jpg" alt="Portrait of Badal Ranjan" width="760" height="950" />
+      <img class="portrait" src="/images/badal-ranjan.webp" alt="Badal Ranjan smiling, wearing a lavender suit and white shirt in a bright office" width="760" height="950" fetchpriority="high" />
     </header>
 
     <section class="about-block" aria-labelledby="bg">

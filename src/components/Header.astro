@@ -1,6 +1,6 @@
 ---
 import { site } from '../data/site';
-const path = Astro.url.pathname;
+const path = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${Astro.url.pathname}/`;
 ---
 
 <header class="site-header wrap">

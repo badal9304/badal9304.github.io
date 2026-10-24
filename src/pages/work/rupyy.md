@@ -7,11 +7,14 @@ company: Rupyy (CarDekho)
 period: 2025
 role: UI/UX designer
 tools: Figma
-cover: /images/rupyy/hero.png
-coverAlt: Three phone screens showing the redesigned Rupyy homepage
+cover: /images/rupyy/hero.webp
+coverAlt: Two phones showing the redesigned Rupyy homepage and the loan application confirmation screen
 group: selected
 category: Fintech
 headline: Making loan eligibility clear earlier in the journey.
+seoTitle: "Rupyy Loan Journey UX Case Study | Badal Ranjan"
+seoDescription: "A fintech UX case study for Rupyy by CarDekho: a homepage redesign and separate dealer and customer loan journeys built around an early eligibility check."
+ogImage: /og/rupyy.jpg
 ---
 
 ## Context and scope
@@ -63,8 +66,8 @@ I looked at BankBazaar, Navi, KreditBee and Paisabazaar. All three patterns belo
     </ul>
   </figcaption>
   <div class="fold-shots">
-    <div class="shot before"><img src="/images/rupyy/fold-1-before.png" alt="Original Rupyy homepage, first fold" loading="lazy" /><span>Before</span></div>
-    <div class="shot after"><img src="/images/rupyy/fold-1-after.png" alt="Redesigned first fold with language switch, eligibility check and 3D icons" loading="lazy" /><span>After</span></div>
+    <div class="shot before"><img src="/images/rupyy/fold-1-before.webp" alt="Original Rupyy homepage, first fold" loading="lazy" decoding="async" width="376" height="786" /><span>Before</span></div>
+    <div class="shot after"><img src="/images/rupyy/fold-1-after.webp" alt="Redesigned first fold with language switch, eligibility check and 3D icons" loading="lazy" decoding="async" width="900" height="1812" /><span>After</span></div>
   </div>
 </figure>
 
@@ -77,7 +80,7 @@ I looked at BankBazaar, Navi, KreditBee and Paisabazaar. All three patterns belo
     </ul>
   </figcaption>
   <div class="fold-shots">
-    <div class="shot after"><img src="/images/rupyy/fold-2-after.png" alt="Redesigned second fold with an EMI calculator and sticky button" loading="lazy" /><span>After</span></div>
+    <div class="shot after"><img src="/images/rupyy/fold-2-after.webp" alt="Redesigned second fold with an EMI calculator and sticky button" loading="lazy" decoding="async" width="900" height="1812" /><span>After</span></div>
   </div>
 </figure>
 
@@ -87,8 +90,8 @@ I looked at BankBazaar, Navi, KreditBee and Paisabazaar. All three patterns belo
     <ul><li>An improved UI for this component.</li></ul>
   </figcaption>
   <div class="fold-shots">
-    <div class="shot before"><img src="/images/rupyy/fold-3-before.png" alt="Original third fold" loading="lazy" /><span>Before</span></div>
-    <div class="shot after"><img src="/images/rupyy/fold-3-after.png" alt="Redesigned third fold" loading="lazy" /><span>After</span></div>
+    <div class="shot before"><img src="/images/rupyy/fold-3-before.webp" alt="Original third fold" loading="lazy" decoding="async" width="372" height="786" /><span>Before</span></div>
+    <div class="shot after"><img src="/images/rupyy/fold-3-after.webp" alt="Redesigned third fold" loading="lazy" decoding="async" width="900" height="1812" /><span>After</span></div>
   </div>
 </figure>
 
@@ -98,8 +101,8 @@ I looked at BankBazaar, Navi, KreditBee and Paisabazaar. All three patterns belo
     <ul><li>A simpler layout that shows each step clearly, so users understand the process.</li></ul>
   </figcaption>
   <div class="fold-shots">
-    <div class="shot before"><img src="/images/rupyy/fold-4-before.png" alt="Original how-it-works section" loading="lazy" /><span>Before</span></div>
-    <div class="shot after"><img src="/images/rupyy/fold-4-after.png" alt="Redesigned how-it-works section with clear steps" loading="lazy" /><span>After</span></div>
+    <div class="shot before"><img src="/images/rupyy/fold-4-before.webp" alt="Original how-it-works section" loading="lazy" decoding="async" width="373" height="783" /><span>Before</span></div>
+    <div class="shot after"><img src="/images/rupyy/fold-4-after.webp" alt="Redesigned how-it-works section with clear steps" loading="lazy" decoding="async" width="900" height="1812" /><span>After</span></div>
   </div>
 </figure>
 
@@ -109,8 +112,8 @@ I looked at BankBazaar, Navi, KreditBee and Paisabazaar. All three patterns belo
     <ul><li>UI improvements.</li></ul>
   </figcaption>
   <div class="fold-shots">
-    <div class="shot before"><img src="/images/rupyy/fold-5-before.png" alt="Original fifth fold" loading="lazy" /><span>Before</span></div>
-    <div class="shot after"><img src="/images/rupyy/fold-5-after.png" alt="Redesigned fifth fold" loading="lazy" /><span>After</span></div>
+    <div class="shot before"><img src="/images/rupyy/fold-5-before.webp" alt="Original fifth fold" loading="lazy" decoding="async" width="377" height="792" /><span>Before</span></div>
+    <div class="shot after"><img src="/images/rupyy/fold-5-after.webp" alt="Redesigned fifth fold" loading="lazy" decoding="async" width="900" height="1812" /><span>After</span></div>
   </div>
 </figure>
 
@@ -123,8 +126,8 @@ I looked at BankBazaar, Navi, KreditBee and Paisabazaar. All three patterns belo
     </ul>
   </figcaption>
   <div class="fold-shots">
-    <div class="shot before"><img src="/images/rupyy/fold-6-before.png" alt="Original testimonials and news section" loading="lazy" /><span>Before</span></div>
-    <div class="shot after"><img src="/images/rupyy/fold-6-after.png" alt="Redesigned testimonials with customer photos" loading="lazy" /><span>After</span></div>
+    <div class="shot before"><img src="/images/rupyy/fold-6-before.webp" alt="Original testimonials and news section" loading="lazy" decoding="async" width="372" height="785" /><span>Before</span></div>
+    <div class="shot after"><img src="/images/rupyy/fold-6-after.webp" alt="Redesigned testimonials with customer photos" loading="lazy" decoding="async" width="900" height="1812" /><span>After</span></div>
   </div>
 </figure>
 
@@ -137,7 +140,7 @@ I looked at BankBazaar, Navi, KreditBee and Paisabazaar. All three patterns belo
     </ul>
   </figcaption>
   <div class="fold-shots">
-    <div class="shot after"><img src="/images/rupyy/fold-7-after.png" alt="Redesigned FAQ section" loading="lazy" /><span>After</span></div>
+    <div class="shot after"><img src="/images/rupyy/fold-7-after.webp" alt="Redesigned FAQ section" loading="lazy" decoding="async" width="900" height="1812" /><span>After</span></div>
   </div>
 </figure>
 
@@ -147,7 +150,7 @@ I looked at BankBazaar, Navi, KreditBee and Paisabazaar. All three patterns belo
 
 In the original two-wheeler loan process, users didn’t know whether they were eligible, or for how much, even after submitting all their details. That caused confusion and drop-offs and slowed the journey down. Dealers had extra manual work and delays because they couldn’t see a customer’s eligibility early on.
 
-![The original two-wheeler loan flow](/images/rupyy/loan-current-flow.jpg)
+<img src="/images/rupyy/loan-current-flow.webp" alt="The original two-wheeler loan flow" width="1600" height="525" loading="lazy" decoding="async" />
 
 ### Solution
 
@@ -156,7 +159,7 @@ In the original two-wheeler loan process, users didn’t know whether they were 
 
 ## Dealer journey
 
-![Dealer loan flow screens](/images/rupyy/dealer-flow.png)
+<img src="/images/rupyy/dealer-flow.webp" alt="Dealer loan flow screens" width="1057" height="480" loading="lazy" decoding="async" />
 
 **Flow**
 
@@ -182,7 +185,7 @@ In the original two-wheeler loan process, users didn’t know whether they were 
 
 ## Customer journey
 
-![Customer loan flow screens](/images/rupyy/customer-flow.png)
+<img src="/images/rupyy/customer-flow.webp" alt="Customer loan flow screens" width="1062" height="457" loading="lazy" decoding="async" />
 
 **Flow**
 

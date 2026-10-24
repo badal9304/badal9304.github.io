@@ -2,9 +2,12 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import WorkGrid from '../components/WorkGrid.astro';
 import { site } from '../data/site';
+import { personSchema, websiteSchema } from '../data/schema';
+
+const schema = [{ '@context': 'https://schema.org', ...personSchema }, websiteSchema];
 ---
 
-<BaseLayout>
+<BaseLayout schema={schema}>
   <section class="hero wrap" aria-labelledby="hero-title">
     <p class="eyebrow">{site.eyebrow}</p>
     <h1 class="hero-title" id="hero-title">
@@ -20,7 +23,7 @@ import { site } from '../data/site';
           {site.resume && <a class="btn" href={site.resume} download="Badal-Ranjan-CV.pdf">Download CV <span class="sr-only">(PDF)</span></a>}
         </div>
         <ul class="hero-links">
-          <li><a href="/about">About me</a></li>
+          <li><a href="/about/">About me</a></li>
           {site.links.filter((l) => l.label === 'LinkedIn').map((l) => <li><a href={l.href} rel="noopener" target="_blank">{l.label}<span class="sr-only"> (opens in a new tab)</span></a></li>)}
           <li><a href="#contact">Get in touch</a></li>
         </ul>
