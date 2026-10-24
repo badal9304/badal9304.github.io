@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/CaseStudy.astro
-order: 3
+order: 2
 title: Rupyy homepage and loan journey
 summary: A homepage redesign and two loan application journeys, for dealers and customers, built around when to show eligibility.
 company: Rupyy (CarDekho)

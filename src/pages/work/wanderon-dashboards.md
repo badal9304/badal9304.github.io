@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/CaseStudy.astro
-order: 4
+order: 5
 group: selected
 category: Enterprise UX · Data-heavy interfaces
 title: Internal dashboards for sales, operations and leads

@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/CaseStudy.astro
-order: 2
+order: 4
 group: selected
 category: Travel technology
 title: WanderOn website redesign

@@ -25,7 +25,7 @@ export const site = {
 
   // The lines next to the intro. Label on the left, text on the right.
   timeline: [
-    { label: 'Now', text: 'Coforge, designing Toyota’s Digital Dealer Management System' },
+    { label: 'Now', text: 'Coforge, designing for Toyota client' },
     { label: 'Before', text: 'WanderOn, travel website, landing pages and internal dashboards' },
     { label: 'Earlier', text: 'Bestie Inc, motion graphics' },
   ],
@@ -37,8 +37,8 @@ export const site = {
   ],
 
   // Put your résumé PDF in the "public" folder, then write its name here, e.g. '/Badal-Ranjan-Resume.pdf'
-  // Leave as '' to hide the résumé links.
-  resume: '',
+  // Leave as '' to hide the Download CV button.
+  resume: '/Badal-Ranjan-CV.pdf',
 
   // Top navigation
   nav: [

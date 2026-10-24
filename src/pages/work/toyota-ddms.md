@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/CaseStudy.astro
-order: 1
-group: featured
+order: 3
+group: selected
 toc: true
 category: Enterprise software · Automotive
 title: Toyota Digital Dealer Management System

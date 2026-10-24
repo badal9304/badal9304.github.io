@@ -10,7 +10,6 @@ const year = new Date().getFullYear();
   <div class="foot-row">
     <ul aria-label="Profiles">
       {site.links.map((l) => <li><a href={l.href} rel="noopener" target="_blank">{l.label}<span class="sr-only"> (opens in a new tab)</span></a></li>)}
-      {site.resume && <li><a href={site.resume} download>Download résumé (PDF)</a></li>}
     </ul>
     <p>© {year} {site.name}</p>
   </div>
