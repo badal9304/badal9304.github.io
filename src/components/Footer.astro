@@ -1,0 +1,16 @@
+---
+import { site } from '../data/site';
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer wrap" id="contact">
+  <p class="contact-lead">Working on something? Write to me.</p>
+  <a class="contact-mail" href={`mailto:${site.email}`}>{site.email}</a>
+  <div class="foot-row">
+    <ul>
+      {site.links.map((l) => <li><a href={l.href} rel="noopener">{l.label}</a></li>)}
+      {site.resume && <li><a href={site.resume}>CV (PDF)</a></li>}
+    </ul>
+    <p>© {year} {site.name}</p>
+  </div>
+</footer>

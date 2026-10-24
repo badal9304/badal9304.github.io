@@ -1,16 +1,28 @@
 ---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import WorkGrid from '../components/WorkGrid.astro';
+import { site } from '../data/site';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout>
+  <section class="hero wrap">
+    <h1 class="hero-title">
+      {site.headline.map((line) => <span class="line"><span>{line}</span></span>)}
+    </h1>
+    <div class="hero-meta">
+      <div class="intro">
+        {site.intro.map((p) => <p>{p}</p>)}
+      </div>
+      <dl class="now">
+        {site.timeline.map((t) => <div><dt>{t.label}</dt><dd>{t.text}</dd></div>)}
+      </dl>
+    </div>
+  </section>
+
+  <section class="work wrap" id="work">
+    <div class="section-head">
+      <h2>Selected work</h2>
+    </div>
+    <WorkGrid />
+  </section>
+</BaseLayout>

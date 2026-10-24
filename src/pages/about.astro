@@ -1,0 +1,52 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { site } from '../data/site';
+import { experience, recognition, tools, education } from '../data/experience';
+---
+
+<BaseLayout title={`About, ${site.name}`} description="Experience, tools and background.">
+  <div class="wrap">
+    <header class="page-head">
+      <h1>About</h1>
+    </header>
+
+    <section class="about-block">
+      <h2>Background</h2>
+      <div class="bio">
+        <p>I’m a senior UX designer with four years in the industry, three of them in UI/UX. I work on enterprise dashboards and travel products, from research and wireframes through to prototypes and design systems.</p>
+        <p>I started in motion graphics at Bestie Inc, on a YouTube channel with over four million subscribers, before moving into product design at WanderOn. Since September 2025 I’ve been at Coforge, working on Toyota’s dealer management platform.</p>
+      </div>
+    </section>
+
+    <section class="about-block">
+      <h2>Experience</h2>
+      <div>
+        {
+          experience.map((job) => (
+            <div class="job">
+              <p class="period">{job.period}</p>
+              <h3>{job.role}, {job.company}</h3>
+              <p class="summary">{job.summary}</p>
+              {job.points.length > 0 && <ul>{job.points.map((pt) => <li>{pt}</li>)}</ul>}
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="about-block">
+      <h2>Recognition</h2>
+      <dl class="rows">{recognition.map((r) => <div><dt>{r.year}</dt><dd>{r.text}</dd></div>)}</dl>
+    </section>
+
+    <section class="about-block">
+      <h2>Tools</h2>
+      <dl class="rows">{tools.map((t) => <div><dt>{t.group}</dt><dd>{t.items}</dd></div>)}</dl>
+    </section>
+
+    <section class="about-block">
+      <h2>Education</h2>
+      <dl class="rows">{education.map((e) => <div><dt>{e.year}</dt><dd>{e.text}</dd></div>)}</dl>
+    </section>
+  </div>
+</BaseLayout>

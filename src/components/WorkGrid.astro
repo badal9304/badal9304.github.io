@@ -1,0 +1,27 @@
+---
+// Reads every case study file in src/pages/work and lists it, in the order set by "order".
+const modules = import.meta.glob('../pages/work/*.md', { eager: true });
+const projects = Object.values(modules)
+  .map((m: any) => ({ ...m.frontmatter, url: m.url }))
+  .sort((a, b) => (a.order ?? 99) - (b.order ?? 99));
+const tones = ['var(--tone-1)', 'var(--tone-2)', 'var(--tone-3)', 'var(--tone-4)'];
+---
+
+<ul class="work-grid">
+  {
+    projects.map((p, i) => (
+      <li class="project">
+        <a href={p.url}>
+          {p.cover ? (
+            <div class="cover has-image"><img src={p.cover} alt={p.coverAlt ?? p.title} loading="lazy" /></div>
+          ) : (
+            <div class="cover" style={`--tone: ${tones[i % tones.length]}`}>Cover image goes here</div>
+          )}
+          <h3>{p.title}</h3>
+          <p class="summary">{p.summary}</p>
+          <p class="meta muted">{p.company}, {p.period}</p>
+        </a>
+      </li>
+    ))
+  }
+</ul>

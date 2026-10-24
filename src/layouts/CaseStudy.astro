@@ -1,0 +1,38 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+const { frontmatter } = Astro.props;
+const f = frontmatter;
+---
+
+<BaseLayout title={`${f.title}, Badal Ranjan`} description={f.summary}>
+  <article class="wrap">
+    <header class="page-head">
+      <h1>{f.title}</h1>
+      <p class="lede">{f.summary}</p>
+    </header>
+
+    <dl class="facts">
+      <div><dt>Company</dt><dd>{f.company}</dd></div>
+      <div><dt>Period</dt><dd>{f.period}</dd></div>
+      <div><dt>Role</dt><dd>{f.role}</dd></div>
+      <div><dt>Tools</dt><dd>{f.tools}</dd></div>
+    </dl>
+
+    <div class="case-cover">
+      {
+        f.cover ? (
+          <div class="cover has-image"><img src={f.cover} alt={f.coverAlt ?? f.title} /></div>
+        ) : (
+          <div class="cover" style="--tone: var(--tone-1)">Cover image goes here</div>
+        )
+      }
+    </div>
+
+    <div class="prose">
+      <slot />
+    </div>
+
+    <p class="next"><a href="/#work">Back to all work</a></p>
+  </article>
+</BaseLayout>
