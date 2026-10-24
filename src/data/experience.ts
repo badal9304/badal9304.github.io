@@ -57,7 +57,7 @@ export const experience = [
   {
     period: 'June 2021 to July 2022',
     role: 'Motion Graphics Designer',
-    company: 'Bestie Inc',
+    company: 'Bestie Inc.',
     summary:
       'Made motion graphics for a Canada-based YouTube channel with over 4 million subscribers, in After Effects, Premiere Pro, Illustrator and Photoshop.',
     points: [],

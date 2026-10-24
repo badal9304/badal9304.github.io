@@ -64,6 +64,8 @@ a:hover .arrow-link::after { transform: translateX(4px); }
 .now { display: grid; gap: 0.9rem; font-size: var(--text-sm); align-content: start; }
 .now div { display: grid; grid-template-columns: 5.5rem 1fr; gap: 1rem; padding-top: 0.9rem; border-top: 1px solid var(--line); }
 .now dt { color: var(--muted); }
+.now dd { display: grid; gap: 0.1rem; }
+.company { font-weight: 600; letter-spacing: -0.005em; }
 
 /* Section heads */
 .section-head { margin-bottom: clamp(2.5rem, 5vw, 4rem); display: grid; gap: 0.9rem; }
@@ -186,6 +188,15 @@ a:hover .arrow-link::after { transform: translateX(4px); }
 .prose .shot img { margin: 0; border-radius: 0; }
 .prose .shot.before img { border-radius: 14px; border: 1px solid var(--line); }
 .shot.tall { flex-basis: 40%; }
+/* On phones, three screens in a row get too small, so the "after" screen moves to its own row. */
+@media (max-width: 599px) {
+  .fold-shots:has(.shot:nth-child(3)) { flex-wrap: wrap; justify-content: center; row-gap: 1.5rem; }
+  .fold-shots:has(.shot:nth-child(3)) .shot.before { flex-basis: 44%; }
+  .fold-shots:has(.shot:nth-child(3)) .shot.after { flex-basis: 70%; }
+  .fold-shots { justify-content: center; }
+  .shot.before { flex-basis: 38%; }
+  .shot.after { flex-basis: 58%; }
+}
 
 /* User persona cards in a case study */
 .personas { display: grid; gap: 1.25rem; margin-block: 1.5rem; }
@@ -222,13 +233,20 @@ a:hover .arrow-link::after { transform: translateX(4px); }
 @media (min-width: 640px) { .job { grid-template-columns: 10rem 1fr; } }
 .job .period { font-size: var(--text-sm); color: var(--muted); padding-top: 0.35rem; }
 .job h3 { font-size: var(--text-xl); }
-.job-company { color: var(--muted); margin-top: 0.15rem; }
+.job-role { margin-top: 0.25rem; font-weight: 500; }
 .job .summary { max-width: var(--measure); margin-top: 0.75rem; }
 .job ul { list-style: disc; padding-left: 1.2rem; max-width: var(--measure); margin-top: 0.7rem; color: var(--muted); }
 .job li + li { margin-top: 0.35rem; }
 .rows > div { display: grid; grid-template-columns: 9rem 1fr; gap: 1rem; padding-block: 0.6rem; }
 .rows dt { color: var(--muted); font-size: var(--text-sm); padding-top: 0.15rem; }
 .rows dd { max-width: var(--measure); }
+@media (max-width: 480px) { .rows > div { grid-template-columns: 1fr; gap: 0.15rem; } }
+
+/* About page header with portrait */
+.about-head { display: grid; gap: 2rem; align-items: end; }
+.portrait { width: 100%; max-width: 22rem; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 20%; border-radius: var(--radius); background: var(--tone-1); }
+@media (max-width: 699px) { .about-head .portrait { order: -1; max-width: 16rem; } }
+@media (min-width: 700px) { .about-head { grid-template-columns: 1fr minmax(14rem, 22rem); column-gap: var(--gutter); } }
 .about-cta { display: flex; flex-wrap: wrap; gap: 0.75rem; padding-top: clamp(2.5rem, 5vw, 4rem); border-top: 1px solid var(--line); }
 
 /* Footer / contact */
@@ -239,6 +257,19 @@ a:hover .arrow-link::after { transform: translateX(4px); }
 .contact-mail { display: inline-block; margin-top: 2rem; font-family: var(--font-display); font-weight: 300; font-size: clamp(1.6rem, 4.5vw, 3.4rem); letter-spacing: -0.02em; line-height: 1.1; text-decoration-thickness: 2px; text-decoration-color: var(--accent); text-underline-offset: 0.14em; word-break: break-word; }
 .foot-row { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem 2rem; margin-top: clamp(3rem, 7vw, 6rem); font-size: var(--text-sm); color: var(--muted); }
 .foot-row ul { display: flex; flex-wrap: wrap; gap: 1.5rem; }
+
+/* Phones */
+@media (max-width: 599px) {
+  .site-header { padding-block: 1.25rem; }
+  .actions .btn { flex: 1 1 auto; justify-content: center; }
+  .next { flex-direction: column; align-items: stretch; }
+  .next-link { text-align: left; margin-left: 0; }
+  .facts { gap: 1.1rem 1rem; }
+  .prose h2 { margin-top: 2.75rem; }
+  .featured .cover, .case-cover .cover { aspect-ratio: 4 / 3; }
+  .type-cover-name { font-size: clamp(1.9rem, 9vw, 2.6rem); }
+  .case-cover .type-cover-name { font-size: clamp(2.2rem, 11vw, 3rem); }
+}
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

@@ -26,7 +26,7 @@ import { site } from '../data/site';
         </ul>
       </div>
       <dl class="now">
-        {site.timeline.map((t) => <div><dt>{t.label}</dt><dd>{t.text}</dd></div>)}
+        {site.timeline.map((t) => <div><dt>{t.label}</dt><dd><span class="company">{t.company}</span><span class="muted">{t.text}</span></dd></div>)}
       </dl>
     </div>
   </section>

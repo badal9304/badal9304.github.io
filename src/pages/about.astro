@@ -6,9 +6,12 @@ import { bio, skills, experience, recognition, tools, education } from '../data/
 
 <BaseLayout title={`About, ${site.name}`} description="Background, skills and experience of Badal Ranjan, UI/UX Designer.">
   <div class="wrap">
-    <header class="page-head">
-      <p class="eyebrow">About me</p>
-      <h1>Clear thinking, deliberate decisions.</h1>
+    <header class="page-head about-head">
+      <div>
+        <p class="eyebrow">About me</p>
+        <h1>Clear thinking, deliberate decisions.</h1>
+      </div>
+      <img class="portrait" src="/images/badal-ranjan.jpg" alt="Portrait of Badal Ranjan" width="1000" height="981" />
     </header>
 
     <section class="about-block" aria-labelledby="bg">
@@ -40,8 +43,8 @@ import { bio, skills, experience, recognition, tools, education } from '../data/
             <li class="job">
               <p class="period">{job.period}</p>
               <div>
-                <h3>{job.role}</h3>
-                <p class="job-company">{job.company}{job.client && <span>, {job.client} client</span>}</p>
+                <h3>{job.company}</h3>
+                <p class="job-role">{job.role}{job.client && <span class="muted"> · {job.client} client</span>}</p>
                 <p class="summary">{job.summary}</p>
                 {job.points.length > 0 && <ul>{job.points.map((pt) => <li>{pt}</li>)}</ul>}
               </div>

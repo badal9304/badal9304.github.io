@@ -23,11 +23,11 @@ export const site = {
     'I design enterprise experiences by bringing structure to workflows, clarity to information, and intention to every interaction.',
   ],
 
-  // The lines next to the intro. Label on the left, text on the right.
+  // The lines next to the intro: label, company name, then what you did there.
   timeline: [
-    { label: 'Now', text: 'Coforge, designing for Toyota client' },
-    { label: 'Before', text: 'WanderOn, travel website, landing pages and internal dashboards' },
-    { label: 'Earlier', text: 'Bestie Inc, motion graphics' },
+    { label: 'Now', company: 'Coforge', text: 'Designing for Toyota client' },
+    { label: 'Before', company: 'WanderOn', text: 'Travel website, landing pages and internal dashboards' },
+    { label: 'Earlier', company: 'Bestie Inc.', text: 'Motion graphics' },
   ],
 
   // Links shown in the hero and contact section.
