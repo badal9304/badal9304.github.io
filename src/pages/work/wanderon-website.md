@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/CaseStudy.astro
-order: 1
+order: 3
 title: WanderOn website redesign
 summary: A user-centred redesign of a backpacking travel company’s website. Site traffic grew 112%.
 company: WanderOn

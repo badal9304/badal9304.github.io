@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/CaseStudy.astro
-order: 4
+order: 6
 title: Toyota Digital Dealer Management System
 summary: An enterprise platform that gives dealers one view of sales, inventory and after-sales work.
 company: Coforge

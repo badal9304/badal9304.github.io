@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/CaseStudy.astro
-order: 3
+order: 5
 title: Internal dashboards for sales, ops and leads
 summary: Three internal tools redesigned around how the teams actually work. Process efficiency improved 50%.
 company: WanderOn

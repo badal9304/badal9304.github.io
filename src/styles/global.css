@@ -57,7 +57,7 @@ dl, dd { margin: 0; }
 .project { grid-column: 1 / -1; }
 .project a { display: block; text-decoration: none; }
 .cover { background: var(--tone, var(--tone-1)); aspect-ratio: 4 / 3; border-radius: var(--radius); overflow: hidden; display: grid; place-items: end start; padding: 1.1rem; font-size: var(--text-sm); color: var(--muted); }
-.cover img { width: 100%; height: 100%; object-fit: cover; position: absolute; inset: 0; }
+.cover img { width: 100%; height: 100%; object-fit: contain; position: absolute; inset: 0; }
 .cover.has-image { position: relative; padding: 0; }
 .project h3 { font-size: var(--text-xl); margin-top: 1.1rem; line-height: 1.15; }
 .project a:hover h3 { color: var(--accent); }
@@ -91,6 +91,36 @@ dl, dd { margin: 0; }
 .prose li + li { margin-top: 0.4rem; }
 .prose img { margin-block: 2.5rem; border-radius: var(--radius); }
 .prose a { text-decoration-color: var(--accent); }
+.prose h3 { font-family: var(--font-body); font-size: var(--text-base); font-weight: 600; letter-spacing: 0; margin: 2rem 0 0.6rem; }
+.prose ol { padding-left: 1.4rem; }
+.prose ol + p, .prose p + ol, .prose ul + ul, .prose ol + ul { margin-top: 1.1rem; }
+
+/* Before/after comparisons in a case study. Wider than the text column on large screens. */
+.folds { display: grid; gap: clamp(3rem, 6vw, 5rem); margin-block: 2rem; }
+@media (min-width: 1000px) { .folds { width: min(calc(100vw - 2 * var(--gutter)), 1100px); } }
+.fold { margin: 0; display: grid; gap: 1.5rem; padding-top: 2rem; border-top: 1px solid var(--line); }
+@media (min-width: 800px) { .fold { grid-template-columns: 2fr 3fr; column-gap: var(--gutter); align-items: start; } }
+.fold h3 { margin-top: 0; }
+.fold-shots { display: flex; gap: 1rem; align-items: flex-end; justify-content: flex-end; }
+.shot { display: grid; gap: 0.5rem; justify-items: center; font-size: var(--text-sm); color: var(--muted); }
+.shot.before { flex: 0 1 30%; }
+.shot.after { flex: 0 1 56%; }
+.prose .shot img { margin: 0; border-radius: 0; }
+.prose .shot.before img { border-radius: 14px; border: 1px solid var(--line); }
+.shot.tall { flex-basis: 40%; }
+
+/* User persona cards in a case study */
+.personas { display: grid; gap: 1.25rem; margin-block: 1.5rem; }
+.persona { background: var(--tone-3); border-radius: var(--radius); padding: 1.25rem; font-size: var(--text-sm); }
+.persona header { display: flex; gap: 1rem; align-items: center; padding-bottom: 1rem; border-bottom: 1px solid var(--line); }
+.prose .persona header img { width: 72px; height: 72px; object-fit: cover; border-radius: var(--radius); margin: 0; flex: none; }
+.persona h3 { margin: 0 0 0.1rem; }
+.persona dl { display: grid; gap: 1rem; padding-top: 1rem; }
+@media (min-width: 560px) { .persona dl { grid-template-columns: 1fr 1fr; column-gap: 1.5rem; } .persona .wide { grid-column: 1 / -1; } }
+.persona dt { font-weight: 600; margin-bottom: 0.3rem; }
+.prose .persona ul { padding-left: 1.1rem; }
+.prose .persona li + li { margin-top: 0.25rem; }
+
 .next { padding-block: 2.5rem 0; border-top: 1px solid var(--line); display: flex; justify-content: space-between; font-size: var(--text-sm); }
 
 /* About */

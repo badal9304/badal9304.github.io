@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/CaseStudy.astro
-order: 2
+order: 4
 title: Ad landing pages for travel campaigns
 summary: Landing pages for Google and Facebook campaigns. Leads grew 127% and revenue 2.3x.
 company: WanderOn
